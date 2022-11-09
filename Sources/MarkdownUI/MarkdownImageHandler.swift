@@ -22,7 +22,7 @@ import Kingfisher
 public struct MarkdownImageHandler {
   var imageAttachment: (URL) -> AnyPublisher<NSTextAttachment, Never>
 
-  init(imageAttachment: @escaping (URL) -> AnyPublisher<NSTextAttachment, Never>) {
+  public init(imageAttachment: @escaping (URL) -> AnyPublisher<NSTextAttachment, Never>) {
     self.imageAttachment = imageAttachment
   }
 }
